@@ -3,6 +3,8 @@ from .models import TermAndCondition
 
 
 class TermAndConditionSerializer(serializers.ModelSerializer):
+
+
     class Meta:
         model = TermAndCondition
         fields = [
@@ -14,3 +16,6 @@ class TermAndConditionSerializer(serializers.ModelSerializer):
             "updated_at",
         ]
         read_only_fields = ["id"]
+
+
+
