@@ -24,34 +24,34 @@ class User(AbstractUser):
         max_length=255,
     )
     mobile = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     email = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     address = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     city = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     state = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     zipcode = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
 
     def get_absolute_url(self):
