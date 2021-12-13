@@ -28,11 +28,6 @@ class User(AbstractUser):
         blank=True,
         max_length=256,
     )
-    email = models.CharField(
-        null=True,
-        blank=True,
-        max_length=256,
-    )
     address = models.CharField(
         null=True,
         blank=True,
@@ -52,6 +47,20 @@ class User(AbstractUser):
         null=True,
         blank=True,
         max_length=256,
+    )
+    dob = models.DateField(
+        null=True,
+        blank=True,
+    )
+    clientid = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    email = models.EmailField(
+        max_length=254,
+        null=True,
+        blank=True,
     )
 
     def get_absolute_url(self):
